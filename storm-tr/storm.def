@@ -1,0 +1,50 @@
+DISTRIBUTED_BE=storm-be.cloud.cnaf.infn.it
+
+BDII_HOST="emitb-bdii-site.cern.ch"
+
+USERS_CONF=/etc/storm/siteinfo/storm-users.conf
+GROUPS_CONF=/etc/storm/siteinfo/storm-groups.conf
+
+MY_DOMAIN="cloud.cnaf.infn.it"
+SITE_NAME="storm-testbed"
+NTP_HOSTS_IP="131.154.1.103 193.206.144.10"
+
+JAVA_LOCATION=/usr/lib/jvm/java
+
+# Commons variables
+
+VOS="testers.eu-emi.eu dteam"
+STORM_BACKEND_HOST=$DISTRIBUTED_BE
+STORM_BE_XMLRPC_TOKEN=Berlusconi
+
+# GridHTTPs variables
+
+STORM_GRIDHTTPS_ENABLED=true
+STORM_GRIDHTTPS_USER="storm"
+STORM_GRIDHTTPS_CERT_DIR="/etc/grid-security/storm"
+STORM_SRM_ENDPOINT=cloud-vm174.cloud.cnaf.infn.it:8444
+STORM_GRIDHTTPS_HTTP_PORT=9085
+STORM_GRIDHTTPS_HTTPS_PORT=9443
+
+# GridFTP variables
+
+GRIDFTP_WITH_DSI="yes"
+GRIDFTP_CONNECTIONS_MAX="2000"
+
+# StoRM WebDAV specific variables:
+
+STORM_DEFAULT_ROOT="/gpfs_omni/storm_testbed_sl6"
+
+STORM_STORAGEAREA_LIST="$VOS noauth igi nested"
+
+STORM_IGI_VONAME=testers.eu-emi.eu
+STORM_IGI_AUTHENTICATED_HTTP_READ=true
+
+STORM_NOAUTH_VONAME=testers.eu-emi.eu
+STORM_NOAUTH_ANONYMOUS_HTTP_READ=true
+
+STORM_NESTED_VONAME=testers.eu-emi.eu
+STORM_NESTED_ACCESSPOINT="/testers.eu-emi.eu/nested /alias"
+STORM_NESTED_AUTHENTICATED_HTTP_READ=true
+
+STORM_TESTERSEUEMIEU_AUTHENTICATED_HTTP_READ=true
