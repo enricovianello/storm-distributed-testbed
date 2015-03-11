@@ -13,7 +13,7 @@ JAVA_LOCATION=/usr/lib/jvm/java
 
 # Commons variables
 
-VOS="testers.eu-emi.eu dteam"
+VOS="testers.eu-emi.eu dteam test.vo"
 STORM_BACKEND_HOST=$DISTRIBUTED_BE
 STORM_BE_XMLRPC_TOKEN=Berlusconi
 
@@ -37,14 +37,16 @@ STORM_DEFAULT_ROOT="/gpfs_omni/storm_testbed_sl6"
 
 STORM_STORAGEAREA_LIST="$VOS noauth igi nested"
 
-STORM_IGI_VONAME=testers.eu-emi.eu
+STORM_IGI_VONAME=test.vo
 STORM_IGI_AUTHENTICATED_HTTP_READ=true
 
-STORM_NOAUTH_VONAME=testers.eu-emi.eu
+STORM_NOAUTH_VONAME=test.vo
 STORM_NOAUTH_ANONYMOUS_HTTP_READ=true
 
-STORM_NESTED_VONAME=testers.eu-emi.eu
+STORM_NESTED_VONAME=test.vo
 STORM_NESTED_ACCESSPOINT="/testers.eu-emi.eu/nested /alias"
 STORM_NESTED_AUTHENTICATED_HTTP_READ=true
 
 STORM_TESTERSEUEMIEU_AUTHENTICATED_HTTP_READ=true
+
+STORM_TESTVO_AUTHENTICATED_HTTP_READ=true
