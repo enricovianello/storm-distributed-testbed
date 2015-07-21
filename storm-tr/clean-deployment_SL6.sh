@@ -21,7 +21,7 @@ yum clean all
 adduser -u 498 -r storm
 
 # install storm packages
-yum install -y emi-storm-globus-gridftp-mp emi-storm-gridhttps-mp storm-webdav 
+yum install -y emi-storm-globus-gridftp-mp storm-webdav
 
 # install yaim configuration
 sh ./install-yaim-configuration.sh

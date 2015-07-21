@@ -36,9 +36,5 @@ puppet apply --debug -v \
 --modulepath "/etc/puppet/modules:$(pwd)/ci-puppet-modules/modules" \
 $manifest
 
-cd /gpfs_omni/storm_testbed_sl6/testers.eu-emi.eu/
-ln -s ../dteam dteam
-ln -s ../noauth noauth_sa
-
-cd /gpfs_omni/storm_testbed_sl6/noauth/
-ln -s ../testers.eu-emi.eu testers
+cd /gpfs_omni/storm_testbed_sl6/test.vo/
+ln -s ../testers.eu-emi.eu testvo_to_testerseuemieu
